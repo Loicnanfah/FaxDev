@@ -1,0 +1,128 @@
+﻿@model FaxDev.Models.UserModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<div class="container">
+    <input type="checkbox" id="flip" />
+    <div class="cover">
+        <div class="front">
+            <img src="~/css/Images/hack1.jpg" alt="" />
+            <div class="text">
+                <span class="text-1">
+                    Every new friend is a <br />
+                    new adventure
+                </span>
+
+                <span class="text-2">Let's get connected</span>
+            </div>
+        </div>
+        <div class="back">
+            <img class="backImg" src="images/backImg.jpg" alt="" />
+            <div class="text">
+                <span class="text-1">
+                    Complete miles of journey <br />
+                    with one step
+                </span>
+                <span class="text-2">Let's get started</span>
+            </div>
+        </div>
+    </div>
+    <div class="forms">
+        <div class="form-content">
+            <div class="login-form">
+                <div class="title">Login</div>
+                <form asp-action="Login" method="post">
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                             <input asp-for="Email" class="form-control" type="text"
+                                   name="email"
+                                   id="email"
+                                   placeholder="Enter your email"
+                                   required />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input asp-for="Password" class="form-control" type="password"
+                                   id="password"
+                                   placeholder="Enter your password"
+                                   required />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="text"><a href="#">Forgot password?</a></div>
+                        <div class="button input-box">
+                            <input type="submit" value="Sumbit" />
+                        </div>
+                        <div class="text sign-up-text">
+                            Don't have an account? <label for="flip">Sigup now</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="signup-form">
+                <div class="title">Signup</div>
+                <div id="customAlert"></div>
+                <form asp-action="Create" onsubmit="return validateForm()">
+                    <div class="input-boxes">
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>                         
+                            <input asp-for="FirtName" class="form-control" type="text"
+                                   placeholder="Enter your Firstname"
+                                   required />
+                            <span asp-validation-for="FirtName" class="text-danger"></span>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-user"></i>
+                            <input asp-for="LastName" class="form-control" type="text"
+                                   placeholder="Enter your lastName"
+                                   required />
+                            <span asp-validation-for="LastName" class="text-danger"></span>
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-envelope"></i>
+                            <i class="fas fa-envelope"></i>
+                            <input asp-for="Email" class="form-control" type="text"
+                                   name="email"
+                                   id="email"
+                                   placeholder="Enter your email"
+                                   required />
+                            <span asp-validation-for="Email" class="text-danger"></span>
+
+                        </div>
+                        <div class="input-box">
+                            <i class="fas fa-lock"></i>
+                            <input asp-for="Password" class="form-control" type="password"
+                                   id="password"
+                                   placeholder="Enter your password"
+                                   required />
+                            <span asp-validation-for="Password" class="text-danger"></span>
+                        </div>
+                        <div class="button input-box">
+                            <input type="submit" value="Create" asp-route=""/>
+                        </div>
+                        <div class="text sign-up-text">
+                            Already have an account? <label for="flip">Login now</label>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+<link rel="stylesheet" href="~/css/style.css" />
+<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

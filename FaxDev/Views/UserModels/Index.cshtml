@@ -1,0 +1,308 @@
+﻿@model IEnumerable<FaxDev.Models.UserModel>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!-- CSS
+   ================================================== -->
+<link rel="stylesheet" href="~/css/base.css" />
+<link rel="stylesheet" href="~/css/vendor.css" />
+<link rel="stylesheet" href="~/css/main.css" />
+<link href="https://assets-global.website-files.com/64f2d0c81a63000fdaf76932/css/the-modern-blog.webflow.cdd7847b1.css"
+      rel="stylesheet"
+      type="text/css" />
+
+<!-- script
+================================================== -->
+<script src="~/js/modernizr.js"></script>
+<script src="~/js/pace.min.js"></script>
+
+<!-- favicons
+================================================== -->
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+
+
+
+<!-- home
+================================================== -->
+<main class="s-home s-home--slides">
+    <div class="home-slider">
+        <div class="home-slider-img"
+             style="background-image: url(https://images.pexels.com/photos/14000467/pexels-photo-14000467.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+        <div class="home-slider-img"
+             style="background-image: url(https://images.pexels.com/photos/270360/pexels-photo-270360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+        <div class="home-slider-img"
+             style="background-image: url(https://images.pexels.com/photos/5473399/pexels-photo-5473399.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)"></div>
+    </div>
+
+    <div class="overlay"></div>
+
+    <div class="home-content">
+        <div class="home-logo">
+            <a href="#">
+                <img src="images/logo.svg" alt="FaxDev" />
+            </a>
+        </div>
+
+        <div class="row home-content__main">
+            <div class="col-eight home-content__text pull-right">
+                <h3>Bienvenue sur Fax-Blue</h3>
+
+                <h1>
+                    Trouver vos devoirs et correction d'epreuve <br />
+                    ici. <br />
+                    Acheter des correction parfaite a 100%.
+                </h1>
+
+                <p>
+                    Vous avez quelques difficulte a faire des devoirs ou a trouver des
+                    anciennes epreuves alors sur Fax-Blue vos devoir et vos epreuves
+                    sont pret a l'achat.Des seances de travaux peuvent etre programemr
+                    pour vos aider dans vos etudes.
+                </p>
+
+                <div class="home-content__subscribe">
+                    <form id="mc-form" class="group" novalidate="true">
+                        <input type="email"
+                               value=""
+                               name="EMAIL"
+                               class="email"
+                               id="mc-email"
+                               placeholder="Email Address"
+                               required="" />
+                        <input type="submit" name="subscribe" value="Notifier Moi" />
+                        <label for="mc-email" class="subscribe-message"></label>
+                    </form>
+                </div>
+            </div>
+            <!-- end home-content__text -->
+
+            <div class="col-four home-content__counter">
+                <h3>Lancement Dans</h3>
+
+                <ul class="countdown d-flex flex-wrap align-items-center">
+                    <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                        <h2>2</h2>
+                        <span class="countdown-text">Days</span>
+                    </li>
+
+                    <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="countdown-title hours">10</h2>
+                        <span class="countdown-text">Hours</span>
+                    </li>
+
+                    <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="countdown-title minutes">15</h2>
+                        <span class="countdown-text">Minutes</span>
+                    </li>
+
+                    <li class="countdown-item d-flex flex-column justify-content-center align-items-center">
+                        <h2 class="countdown-title seconds">34</h2>
+                        <span class="countdown-text">Seconds</span>
+                    </li>
+                </ul>
+                <!-- end home-content__clock -->
+            </div>
+            <!-- end home-content__counter -->
+        </div>
+        <!-- end home-content__main -->
+
+        <ul class="home-social">
+            <li>
+                <a href="#0">
+                    <i class="fab fa-facebook-f" aria-hidden="true"></i><span>JavaScript</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fab fa-twitter" aria-hidden="true"></i><span>Html</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fab fa-instagram" aria-hidden="true"></i><span>Css</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fab fa-behance" aria-hidden="true"></i><span>Java</span>
+                </a>
+            </li>
+            <li>
+                <a href="#0">
+                    <i class="fab fa-dribbble" aria-hidden="true"></i><span>C</span>
+                </a>
+            </li>
+        </ul>
+        <!-- end home-social -->
+
+        <div class="row home-copyright">
+            <span>Copyright lelo 2023</span>
+        </div>
+        <!-- end home-copyright -->
+
+        <div class="home-content__line"></div>
+    </div>
+    <!-- end home-content -->
+</main>
+<!-- end s-home -->
+<!-- info
+================================================== -->
+<a class="info-toggle" href="#0">
+    <span class="info-menu-icon"></span>
+</a>
+
+<div class="s-info">
+    <div class="row info-wrapper">
+        <div>
+            <h1>Devoir Disponible.</h1>
+            <section>
+                <div class="container-full padding-2-5 glow">
+                    <div class="title-wrapper">
+                        <h3 class="no-wrap">Deja telechargable</h3>
+                        <div class="line-separator"></div>
+                    </div>
+                    <div class="space-mid"></div>
+                    <div id="w-node-_295ce980-1afc-247a-9ee8-3b01823375f4-823375ec"
+                         class="fade-in-animation w-dyn-list">
+                        <div role="list" class="w-dyn-items">
+                            <div role="listitem" class="features-grid w-dyn-item">
+                                <a href="@Url.Action("Teto", "UserModels")"
+                                   class="card-wrapper no-right-border-radius-features w-inline-block">
+                                    <div class="circle-filled-with-border">
+                                        <p class="icon star-icon">De</p>
+                                    </div>
+
+                                    <div class="gradient-overlay"></div>
+                                    <img alt=""
+                                         loading="lazy"
+                                         style="
+                          background-image: url('https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+                        "
+                                         src="https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, 68vw"
+                                         srcset="
+                         https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1  500w,
+                         https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1   800w,
+                         https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 1080w,
+                          https://images.pexels.com/photos/2004161/pexels-photo-2004161.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1       1440w
+                        "
+                                         class="image-absolute" />
+                                </a>
+                                <div class="text-card-wrapper features-card">
+                                    <div class="badge-card-rectangular-curve move-left gradient-background">
+                                        <h5 class="capitalized">Html/Php</h5>
+                                    </div>
+                                    <div class="featured-details-wrapper">
+                                        <p class="featured-details">
+                                            C'est dans la compréhension de nos lacunes que nous trouvons la force de construire des fondations plus solides.
+                                            L'éducation est un voyage complexe où l'apprentissage et l'échec dansent ensemble, tissant la trame de notre évolution.
+                                            Dans cette danse, puissante et parfois tragique, nous découvrons notre propre résilience et la promesse d'un savoir plus profond. Alors, 
+                                            embrassons chaque correction comme une invitation à grandir, à transcender les limites et à forger notre propre destin académique.
+                                        </p>
+                                        <div class="featured-details-overlay"></div>
+                                    </div>
+                                    <div class="gap-8px-row center-on-mobile">
+                                        <div class="flex">
+                                            <div class="filled-circle-avatar">
+                                                <img src="https://images.pexels.com/photos/11355572/pexels-photo-11355572.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                                                     loading="lazy"
+                                                     alt="" />
+                                            </div>
+                                            <h5 class="line-height-15px">TeTo☣️</h5>
+                                        </div>
+                                        <div class="flex">
+                                            <p>Dec</p>
+                                            <p>03</p>
+                                            <div class="dot"></div>
+                                            <p>6</p>
+                                            <p>Lire</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="listitem" class="features-grid w-dyn-item">
+                                <a href="#"
+                                   class="card-wrapper no-right-border-radius-features w-inline-block">
+                                    <div class="circle-filled-with-border">
+                                        <p class="icon star-icon">De</p>
+                                    </div>
+
+                                    <div class="gradient-overlay"></div>
+                                    <img alt=""
+                                         loading="lazy"
+                                         style="
+                          background-image: url('https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2.jpg');
+                        "
+                                         src="https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2.jpg"
+                                         sizes="(max-width: 479px) 100vw, (max-width: 767px) 95vw, 68vw"
+                                         srcset="
+                          https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2-p-500.jpg   500w,
+                          https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2-p-800.jpg   800w,
+                          https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2-p-1080.jpg 1080w,
+                          https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/64f584723e2504f6bbb416b3_Tech2.jpg        1440w
+                        "
+                                         class="image-absolute" />
+                                </a>
+                                <div class="text-card-wrapper features-card">
+                                    <div class="badge-card-rectangular-curve move-left gradient-background">
+                                        <h5 class="capitalized">Download</h5>
+                                    </div>
+                                    <div class="featured-details-wrapper">
+                                        <p class="featured-details">
+                                            5G is the fifth generation of wireless technology that
+                                            succeeds 4G. It is designed to provide faster data
+                                            speeds, lower latency, greater reliability, and
+                                            increased connectivity compared to its predecessors.
+                                        </p>
+                                        <div class="featured-details-overlay"></div>
+                                    </div>
+                                    <div class="gap-8px-row center-on-mobile">
+                                        <div class="flex">
+                                            <div class="filled-circle-avatar">
+                                                <img src="https://assets-global.website-files.com/64f2d0c81a63000fdaf76938/651ba7b22cfca35338263ce8_Author1Small-2.jpg"
+                                                     loading="lazy"
+                                                     alt="" />
+                                            </div>
+                                            <h5 class="line-height-15px">Marcus King</h5>
+                                        </div>
+                                        <div class="flex">
+                                            <p>Oct</p>
+                                            <p>03</p>
+                                            <div class="dot"></div>
+                                            <p>3</p>
+                                            <p>mins read</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- end info contact -->
+    </div>
+    <!-- end info wrapper -->
+</div>
+<!-- end s-info -->
+<!-- preloader
+================================================== -->
+<div id="preloader">
+    <div id="loader">
+        <div class="line-scale-pulse-out">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<!-- Java Script
+================================================== -->
