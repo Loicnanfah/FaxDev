@@ -228,3 +228,32 @@ body{
    width: 300px;
    text-align: center;
  }
+
+
+.download-button {
+    display: inline-block;
+    overflow: hidden;
+}
+
+    .download-button a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 30px;
+        text-decoration: none;
+        color: #fff;
+        background-color: #8a2be2; /* Fond violet */
+        border-radius: 25px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+        .download-button a:hover {
+            background-color: #6a1e9b; /* Changement de couleur au survol */
+        }
+
+        .download-button a:active {
+            transform: scale(0.95);
+        }
